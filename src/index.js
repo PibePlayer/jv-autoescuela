@@ -169,14 +169,14 @@ async function handleApiRoute(url, request, env) {
       incluyeExamen = url.searchParams.get('incluyeExamen') === 'true';
     }
 
-    // Precios de base por clase según vehículo (Valores orientativos estándar de mercado en Argentina 2024-2026)
+    // Precios de base por clase/módulo según vehículo
     const basePorClase = {
-      manual: 26000,
-      automatico: 29000,
-      moto: 22000,
-      camion: 42000,
-      colectivo: 45000,
-    }[vehiculo] || 26000;
+      manual: 30000,
+      automatico: 35000,
+      moto: 25000,
+      camion: 400000,
+      colectivo: 420000,
+    }[vehiculo] || 30000;
 
     let subtotal = basePorClase * clases;
     let costoExamen = incluyeExamen ? 48000 : 0;

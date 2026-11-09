@@ -1,6 +1,6 @@
 /* ==========================================================================
-   JV Autoescuela Hurlingham - Modern Design System
-   Inspirado en Driver's School, optimizado para alto rendimiento y conversión
+   JV Autoescuela Hurlingham - Hoja de Estilos Oficial
+   Optimizado para alto rendimiento, accesibilidad y conversión
    ========================================================================== */
 
 :root {
@@ -94,7 +94,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Top Announcement Bar (Estilo Promos Driver's School)
+   Barra Superior de Novedades y Promociones
    ========================================================================== */
 .announcement-bar {
   background: linear-gradient(90deg, #1E293B 0%, #0F172A 100%);
@@ -208,6 +208,16 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.brand-logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-red);
+  box-shadow: 0 4px 10px rgba(229, 34, 34, 0.25);
+  flex-shrink: 0;
 }
 
 .logo-mark {
@@ -657,7 +667,7 @@ section {
 }
 
 /* ==========================================================================
-   Comparativa Crítica (Inspirado en Driver's School "Cuidado con los truchos")
+   Sección Comparativa: JV Autoescuela vs. Cursos Municipales
    ========================================================================== */
 .comparison-section {
   background-color: var(--white);
@@ -967,6 +977,13 @@ section {
   margin-top: 40px;
 }
 
+.levels-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
 .level-card {
   background-color: var(--white);
   border-radius: var(--radius-lg);
@@ -1118,43 +1135,73 @@ section {
   border-color: var(--slate-900);
 }
 
-.slider-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+.pack-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-.range-value-pill {
-  background-color: var(--primary-red-light);
-  color: var(--primary-red);
-  font-weight: 800;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  font-size: 0.88rem;
+@media (max-width: 640px) {
+  .pack-selection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.custom-slider {
-  width: 100%;
-  height: 8px;
-  border-radius: 4px;
-  background: var(--slate-300);
-  outline: none;
+.pack-btn {
+  background-color: var(--white);
+  border: 2px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 14px 8px 12px;
+  text-align: center;
   cursor: pointer;
-  accent-color: var(--primary-red);
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.slider-ticks {
-  display: flex;
-  justify-content: space-between;
+.pack-btn:hover {
+  border-color: var(--slate-400);
+  background-color: var(--slate-50);
+}
+
+.pack-btn.active {
+  border-color: var(--primary-red);
+  background-color: #FEF2F2;
+  box-shadow: 0 4px 12px rgba(229, 34, 34, 0.15);
+}
+
+.pack-btn .p-badge-rec {
+  position: absolute;
+  top: -10px;
+  background-color: var(--primary-red);
+  color: var(--white);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 6px rgba(229, 34, 34, 0.3);
+}
+
+.pack-btn .p-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--slate-900);
+}
+
+.pack-btn.active .p-title {
+  color: var(--primary-red);
+}
+
+.pack-btn .p-sub {
   font-size: 0.75rem;
   color: var(--slate-500);
-  margin-top: 6px;
-}
-
-.tick-recommended {
-  color: var(--primary-red);
-  font-weight: 800;
+  margin-top: 2px;
 }
 
 .checkbox-options {
@@ -2350,7 +2397,8 @@ section {
   .panel-grid {
     grid-template-columns: 1fr;
   }
-  .levels-grid {
+  .levels-grid,
+  .levels-grid-4 {
     grid-template-columns: 1fr;
   }
   .footer-grid {

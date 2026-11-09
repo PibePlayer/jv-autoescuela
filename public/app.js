@@ -112,23 +112,23 @@ function initFleetTabs() {
    Cotizador Interactivo de Cursos & Precios
    ========================================================================== */
 const PRECIOS_BASE = {
-  manual: { nombre: 'Gol Rojo (Manual)', porClase: 26000 },
-  automatico: { nombre: 'Auto Automático', porClase: 29000 },
-  moto: { nombre: 'Moto (Todas Cilindradas)', porClase: 22000 },
-  camion: { nombre: 'Camión (Cat. C)', porClase: 42000 },
-  colectivo: { nombre: 'Colectivo (Cat. D)', porClase: 45000 },
+  manual: { nombre: 'Auto Manual (Doble Pedalera)', porClase: 30000 },
+  automatico: { nombre: 'Auto Automático', porClase: 35000 },
+  moto: { nombre: 'Moto (Circuito Oficial)', porClase: 25000 },
+  camion: { nombre: 'Camión (Cat. C)', porClase: 400000 },
+  colectivo: { nombre: 'Colectivo (Cat. D)', porClase: 420000 },
 };
 
 let currentQuote = {
   vehiculo: 'manual',
   clases: 10,
   incluyeExamen: true,
-  subtotal: 260000,
+  subtotal: 300000,
   examen: 48000,
-  total: 308000,
-  efectivo: 261800,
-  cuota3: 102666,
-  cuota6: 55440,
+  total: 348000,
+  efectivo: 295800,
+  cuota3: 116000,
+  cuota6: 62640,
 };
 
 function formatARS(num) {
@@ -137,15 +137,14 @@ function formatARS(num) {
 
 function initCalculator() {
   const chips = document.querySelectorAll('#calcVehiculoChips .chip');
-  const slider = document.getElementById('clasesRange');
-  const clasesPill = document.getElementById('clasesValue');
+  const packBtns = document.querySelectorAll('#calcPacksGrid .pack-btn');
   const chkExamen = document.getElementById('chkExamen');
   const btnWhatsapp = document.getElementById('btnCotizarWhatsapp');
 
   function updateCalculation() {
     const vehiculoKey = currentQuote.vehiculo;
-    const clasesCount = parseInt(slider.value, 10);
-    const hasExamen = chkExamen.checked;
+    const clasesCount = currentQuote.clases || 10;
+    const hasExamen = chkExamen ? chkExamen.checked : false;
 
     currentQuote.clases = clasesCount;
     currentQuote.incluyeExamen = hasExamen;
@@ -167,10 +166,10 @@ function initCalculator() {
     currentQuote.cuota6 = cuota6;
 
     // Actualizar UI
-    if (clasesPill) clasesPill.textContent = `${clasesCount} Clases`;
+    const packLabel = clasesCount === 1 ? '1 Clase individual' : `${clasesCount} Clases`;
     const summaryVehiculoLabel = document.getElementById('summaryVehiculoLabel');
     if (summaryVehiculoLabel) {
-      summaryVehiculoLabel.textContent = `${base.nombre} (${clasesCount} clases)`;
+      summaryVehiculoLabel.textContent = `${base.nombre} (${packLabel})`;
     }
 
     const summarySubtotal = document.getElementById('summarySubtotal');
@@ -206,9 +205,14 @@ function initCalculator() {
     });
   });
 
-  if (slider) {
-    slider.addEventListener('input', updateCalculation);
-  }
+  packBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      packBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentQuote.clases = parseInt(btn.dataset.clases, 10);
+      updateCalculation();
+    });
+  });
 
   if (chkExamen) {
     chkExamen.addEventListener('change', updateCalculation);
@@ -217,10 +221,11 @@ function initCalculator() {
   if (btnWhatsapp) {
     btnWhatsapp.addEventListener('click', () => {
       const vNombre = PRECIOS_BASE[currentQuote.vehiculo].nombre;
+      const packTexto = currentQuote.clases === 1 ? '1 clase individual' : `${currentQuote.clases} clases`;
       const text =
         `¡Hola JV Autoescuela! 🚗 Armé un presupuesto personalizado desde la web:\n\n` +
         `• *Vehículo:* ${vNombre}\n` +
-        `• *Cantidad de clases:* ${currentQuote.clases} clases prácticas\n` +
+        `• *Cantidad de clases:* ${packTexto}\n` +
         `• *Acompañamiento a examen:* ${currentQuote.incluyeExamen ? 'Sí' : 'No'}\n` +
         `• *Precio de lista:* ${formatARS(currentQuote.total)}\n` +
         `• *Precio en Efectivo / Transferencia (15% OFF):* ${formatARS(currentQuote.efectivo)}\n` +
