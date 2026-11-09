@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JV Autoescuela Hurlingham | La N°1 en Cursos de Manejo - Autos, Motos, Camiones y Colectivos</title>
+  <meta name="description" content="Aprendé a manejar de verdad en Hurlingham con JV Autoescuela. Clases en tránsito real con nuestro icónico Gol Rojo doble comando, autos automáticos, motos, camiones y colectivos. Reserva tu turno online.">
+  <meta name="keywords" content="autoescuela hurlingham, escuela de manejo hurlingham, jv autoescuela, aprender a manejar, registro de conducir hurlingham, clases de manejo hurlingham, gol rojo autoescuela">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JV Autoescuela Hurlingham | Aprendé a manejar de verdad">
+  <meta property="og:description" content="La autoescuela N°1 de Hurlingham. Autos manuales (Gol Rojo), automáticos, motos de todas las cilindradas, camiones y colectivos con instructores matriculados.">
+  <meta property="og:image" content="images/jv_gol_rojo.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23e52222'/><circle cx='50' cy='50' r='18' fill='%23ffffff'/><path d='M50 5 L50 95 M5 50 L95 50' stroke='%23ffffff' stroke-width='8'/><circle cx='50' cy='50' r='8' fill='%23111827'/></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Inspirado en Driver's School) -->
+  <aside class="announcement-bar" aria-label="Aviso de promociones">
+    <div class="container announcement-content">
+      <div class="announcement-badge">🔥 CYBER PROMOS HURLINGHAM</div>
+      <p class="announcement-text">
+        <strong>10 Clases Prácticas + 2 Clases GRATIS</strong> | Hasta <strong>6 cuotas SIN INTERÉS</strong> con todas las tarjetas bancarias y 15% OFF en efectivo
+      </p>
+      <a href="#cotizador" class="announcement-link">Ver Ofertas &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Header Superior con Datos de Contacto y Confianza -->
+  <div class="top-meta-bar">
+    <div class="container top-meta-content">
+      <div class="top-meta-item">
+        <span class="icon">📍</span>
+        <span>Av. Gobernador Vergara 3855, Hurlingham</span>
+      </div>
+      <div class="top-meta-item">
+        <span class="icon">⏰</span>
+        <span>Lun a Vie: 08:00 a 18:00 | Sáb: 09:00 a 13:00</span>
+      </div>
+      <div class="top-meta-item rating-badge">
+        <span class="stars">★★★★★</span>
+        <strong>4.8 / 5</strong> en Google (+255 reseñas)
+      </div>
+      <div class="top-meta-item contact-direct">
+        <span class="icon">💬</span>
+        <a href="https://wa.me/5491168172577?text=Hola%20JV%20Autoescuela,%20quiero%20información%20sobre%20los%20cursos%20de%20manejo" target="_blank" rel="noopener">WhatsApp: <strong>11 6817-2577</strong></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar Principal -->
+  <header class="main-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="JV Autoescuela Inicio">
+        <div class="logo-mark">JV</div>
+        <div class="logo-text">
+          <span class="brand-name">AUTOESCUELA</span>
+          <span class="brand-sub">HURLINGHAM • N° 1</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="navMenu">
+        <a href="#cursos" class="nav-link">Cursos & Flota</a>
+        <a href="#por-que-jv" class="nav-link highlight-why">¿Por qué JV? <span class="badge-pill">Vs Municipio</span></a>
+        <a href="#cotizador" class="nav-link">Cotizador Online</a>
+        <a href="#test-examen" class="nav-link">Simulador Teórico</a>
+        <a href="#opiniones" class="nav-link">Opiniones</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#reservas" class="btn btn-primary btn-sm">
+          <span class="btn-icon">📅</span> Reservar Turno
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="brand-name">JV AUTOESCUELA</span>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#cursos" class="drawer-link">Cursos & Categorías</a>
+      <a href="#por-que-jv" class="drawer-link">¿Por qué elegir JV vs Clases Gratuitas?</a>
+      <a href="#reservas" class="drawer-link">Reservar Turno (Google Calendar)</a>
+      <a href="#cotizador" class="drawer-link">Precios y Cotizador</a>
+      <a href="#test-examen" class="drawer-link">Simulador de Examen Hurlingham</a>
+      <a href="#opiniones" class="drawer-link">Testimonios de Alumnos</a>
+      <a href="#contacto" class="drawer-link">Ubicación y Horarios</a>
+    </div>
+    <div class="drawer-cta">
+      <a href="https://wa.me/5491168172577" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener">
+        <span>💬</span> Hablar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+          <div class="hero-chip">
+            <span class="pulse-dot"></span>
+            LÍDERES EN FORMACIÓN VIAL DE HURLINGHAM
+          </div>
+          <h1 class="hero-title">
+            Aprendé a manejar <span class="text-gradient">de verdad.</span> Sin miedos, a tu ritmo y a la primera.
+          </h1>
+          <p class="hero-lead">
+            Prácticas reales en la calle con nuestro emblemático <strong>Gol Rojo ploteado con doble comando</strong>. Clases para <strong>Autos Manuales, Automáticos, Motos de todas las cilindradas, Camiones y Colectivos</strong>. Instructores matriculados con paciencia absoluta.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#reservas" class="btn btn-primary btn-lg">
+              <span>📅</span> Reservá tu Primer Turno Online
+            </a>
+            <a href="https://wa.me/5491168172577?text=Hola%20JV!%20Quisiera%20consultar%20por%20un%20curso%20de%20manejo" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+              <span>💬</span> Consultá por WhatsApp
+            </a>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="trust-grid">
+            <div class="trust-item">
+              <div class="trust-icon">🚗</div>
+              <div class="trust-info">
+                <strong>Gol Rojo Doble Comando</strong>
+                <span>Seguridad pedagógica total</span>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">🛡️</div>
+              <div class="trust-info">
+                <strong>Instructores Matriculados</strong>
+                <span>Habilitación oficial ANSV y PBA</span>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">🎯</div>
+              <div class="trust-info">
+                <strong>+96% Aprobación</strong>
+                <span>Pista y tránsito de Hurlingham</span>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">💳</div>
+              <div class="trust-info">
+                <strong>3 y 6 Cuotas Sin Interés</strong>
+                <span>Todas las tarjetas bancarias</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Media Showcase -->
+        <div class="hero-media-col">
+          <div class="hero-card-featured">
+            <div class="card-badge-top">NUESTRO EMBLEMÁTICO GOL ROJO</div>
+            <img src="images/jv_gol_rojo.jpg" alt="Volkswagen Gol Rojo ploteado de JV Autoescuela Hurlingham con doble comando" class="hero-main-img" width="800" height="450">
+            <div class="hero-card-footer">
+              <div class="footer-stat">
+                <span class="stat-number">+2.500</span>
+                <span class="stat-desc">Vecinos formados con éxito</span>
+              </div>
+              <div class="footer-divider"></div>
+              <div class="footer-stat">
+                <span class="stat-number">5 Categorías</span>
+                <span class="stat-desc">Manual, Auto, Moto, Camión, Colectivo</span>
+              </div>
+              <div class="footer-divider"></div>
+              <div class="footer-stat">
+                <span class="stat-number">4.8 ★</span>
+                <span class="stat-desc">En Google Maps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFIESTO CRÍTICO / COMPARATIVA VS MUNICIPALIDAD (Inspirado en Driver's School) -->
+    <section class="comparison-section" id="por-que-jv">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker alert-kicker">⚠️ ATENCIÓN VECINO DE HURLINGHAM</div>
+          <h2 class="section-title">¿Clases Gratuitas del Municipio o Autoescuela Profesional?</h2>
+          <p class="section-subtitle">
+            En Hurlingham la Municipalidad ofrece cursos "gratuitos", pero lo barato suele salir muy caro cuando se trata de tu vida, tu tiempo y tu seguridad vial. Conocé las diferencias reales.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <!-- Columna Municipio -->
+          <div class="comp-card comp-municipal">
+            <div class="comp-header">
+              <div class="comp-tag">Cursos Municipales Gratuitos</div>
+              <h3>Lo "Gratis" que Cuesta Caro</h3>
+              <p class="comp-summary">Falta de recursos, esperas infinitas y conductores que salen a la calle sin preparación real.</p>
+            </div>
+            <ul class="comp-list">
+              <li>
+                <span class="cross">✕</span>
+                <div>
+                  <strong>Listas de espera de 6 a 12 meses:</strong>
+                  <span>Perdés meses esperando un turno que muchas veces cancelan a último momento.</span>
+                </div>
+              </li>
+              <li>
+                <span class="cross">✕</span>
+                <div>
+                  <strong>Vehículos desgastados o sin VTV:</strong>
+                  <span>Autos reciclados de ex-patrulleros, sin mantenimiento riguroso ni garantía de seguridad para el alumno.</span>
+                </div>
+              </li>
+              <li>
+                <span class="cross">✕</span>
+                <div>
+                  <strong>Instructores sin matrícula provincial:</strong>
+                  <span>Personal administrativo o sin formación pedagógica, paciencia nula con personas nerviosas.</span>
+                </div>
+              </li>
+              <li>
+                <span class="cross">✕</span>
+                <div>
+                  <strong>Cero tránsito real:</strong>
+                  <span>Sólo dan vueltas en un playón cerrado. Al salir a la calle o al examen sufren pánico o desaprueban.</span>
+                </div>
+              </li>
+              <li>
+                <span class="cross">✕</span>
+                <div>
+                  <strong>Sin variedad de categorías:</strong>
+                  <span>No tienen autos automáticos, ni motos de diferentes cilindradas, ni camiones ni colectivos.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna JV Autoescuela -->
+          <div class="comp-card comp-jv featured">
+            <div class="comp-badge-winner">ELECCIÓN N° 1 EN HURLINGHAM</div>
+            <div class="comp-header">
+              <div class="comp-tag jv-tag">JV Autoescuela Hurlingham</div>
+              <h3>Formación Profesional de Verdad</h3>
+              <p class="comp-summary">Seguridad, respeto, pedagogía moderna y acompañamiento integral hasta que tengas tu carnet.</p>
+            </div>
+            <ul class="comp-list">
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Empezás en 24 a 48 hs:</strong>
+                  <span>Vos elegís los días y horarios que te queden cómodos, sin meses de espera ni burocracia.</span>
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Gol Rojo impecable con doble comando:</strong>
+                  <span>Vehículos en perfecto estado mecánico, VTV al día y seguro especial con cobertura total para el aprendiz.</span>
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Instructores matriculados con paciencia:</strong>
+                  <span>Profesionales liderados por Martín Gamarra, especializados en fobia al volante (amaxofobia) y principiantes.</span>
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>100% en tránsito real y pista oficial:</strong>
+                  <span>Practicás en avenidas, rotondas de Hurlingham (Av. Vergara), cruces de tren y el circuito exacto del examen.</span>
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Todas las categorías habilitadas:</strong>
+                  <span>Manual, Automático, Motos (110 a 300+ cc), Camiones pesados y Colectivos profesionales para salida laboral.</span>
+                </div>
+              </li>
+            </ul>
+            <div class="comp-cta">
+              <a href="#reservas" class="btn btn-primary btn-block">
+                <span>🏆</span> Elegir Calidad y Seguridad con JV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VEHÍCULOS Y CATEGORÍAS (TABS INTERACTIVAS) -->
+    <section class="fleet-section" id="cursos">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">FLOTA & CATEGORÍAS HABILITADAS</div>
+          <h2 class="section-title">El Curso Exacto para Tu Necesidad</h2>
+          <p class="section-subtitle">
+            Desde tu primer auto particular hasta tu licencia profesional de transporte de carga y pasajeros. Hacé clic en cada categoría para ver detalles y modalidades:
+          </p>
+        </div>
+
+        <!-- Filter Buttons / Tabs -->
+        <div class="fleet-tabs" role="tablist">
+          <button class="fleet-tab active" data-target="manual" role="tab" aria-selected="true">
+            <span class="tab-emoji">🚗</span>
+            <span>Auto Manual (Gol Rojo)</span>
+          </button>
+          <button class="fleet-tab" data-target="automatico" role="tab" aria-selected="false">
+            <span class="tab-emoji">⚡</span>
+            <span>Auto Automático</span>
+          </button>
+          <button class="fleet-tab" data-target="motos" role="tab" aria-selected="false">
+            <span class="tab-emoji">🏍️</span>
+            <span>Motos (Todas las Cilindradas)</span>
+          </button>
+          <button class="fleet-tab" data-target="camiones" role="tab" aria-selected="false">
+            <span class="tab-emoji">🚛</span>
+            <span>Camiones (Cat. C)</span>
+          </button>
+          <button class="fleet-tab" data-target="colectivos" role="tab" aria-selected="false">
+            <span class="tab-emoji">🚌</span>
+            <span>Colectivos (Cat. D)</span>
+          </button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="fleet-content-box">
+          
+          <!-- TAB 1: AUTO MANUAL (GOL ROJO) -->
+          <div class="fleet-panel active" id="panel-manual" role="tabpanel">
+            <div class="panel-grid">
+              <div class="panel-img-wrap">
+                <img src="images/jv_gol_rojo.jpg" alt="Volkswagen Gol Rojo de JV Autoescuela" class="panel-img" loading="lazy">
+                <div class="panel-badge-overlay">EL CLÁSICO DE HURLINGHAM</div>
+              </div>
+              <div class="panel-info">
+                <div class="category-pill">Categoría B.1 • Particular</div>
+                <h3>Auto Caja Manual: Volkswagen Gol Rojo</h3>
+                <p class="panel-desc">
+                  Aprendé con el vehículo más confiable y dócil para la enseñanza. Dominá el juego de embrague y acelerador, las salidas en pendiente sin que se pare el motor, y la técnica infalible de estacionamiento paralelo en 3 maniobras.
+                </p>
+                <div class="panel-features-grid">
+                  <div class="feature-item">
+                    <span class="f-icon">⚙️</span>
+                    <strong>Doble Comando Homologado:</strong> El instructor tiene pedalera de seguridad auxiliar.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🚦</span>
+                    <strong>Tránsito Real en Hurlingham:</strong> Práctica en Av. Vergara, Jauretche y rotondas.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🅿️</span>
+                    <strong>Estacionamiento Perfecto:</strong> Pistas y vallas idénticas al examen municipal.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">📋</span>
+                    <strong>Teórico Bonificado:</strong> Material de estudio digital y simulador de preguntas.
+                  </div>
+                </div>
+                <div class="panel-cta-row">
+                  <a href="#reservas" class="btn btn-primary btn-book-category" data-cat="manual">Reservar Turno con Gol Rojo</a>
+                  <a href="#cotizador" class="btn btn-secondary">Ver Precios y Cuotas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: AUTO AUTOMÁTICO -->
+          <div class="fleet-panel" id="panel-automatico" role="tabpanel">
+            <div class="panel-grid">
+              <div class="panel-img-wrap">
+                <img src="images/jv_cockpit_dual.jpg" alt="Interior con doble comando y manejo en tránsito para auto automático" class="panel-img" loading="lazy">
+                <div class="panel-badge-overlay">TENDENCIA & CONFORT</div>
+              </div>
+              <div class="panel-info">
+                <div class="category-pill">Categoría B.1 Automático • Sin Estrés</div>
+                <h3>Auto Caja Automática: Manejo Fluido y Relajado</h3>
+                <p class="panel-desc">
+                  Olvidate de que el auto se apague o de coordinar pedales. Ideal para quienes sienten mucha ansiedad al volante, personas mayores, o quienes van a conducir exclusivamente un vehículo automático moderno. 
+                </p>
+                <div class="panel-features-grid">
+                  <div class="feature-item">
+                    <span class="f-icon">✨</span>
+                    <strong>0% Tirones:</strong> Concentrá toda tu atención en el entorno vial, espejos y señales.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🧠</span>
+                    <strong>Anti-Pánico / Amaxofobia:</strong> La mejor opción pedagógica para vencer el miedo.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🛡️</span>
+                    <strong>Doble Comando Integral:</strong> Seguridad total guiada por el instructor.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🏆</span>
+                    <strong>Habilitación Legal:</strong> Válido para rendir el examen práctico de Hurlingham.
+                  </div>
+                </div>
+                <div class="panel-cta-row">
+                  <a href="#reservas" class="btn btn-primary btn-book-category" data-cat="automatico">Reservar Turno en Automático</a>
+                  <a href="#cotizador" class="btn btn-secondary">Cotizar Plan Automático</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: MOTOS -->
+          <div class="fleet-panel" id="panel-motos" role="tabpanel">
+            <div class="panel-grid">
+              <div class="panel-img-wrap">
+                <img src="images/jv_moto_training.jpg" alt="Circuito de conos y destreza en pista para motos en JV Autoescuela" class="panel-img" loading="lazy">
+                <div class="panel-badge-overlay">TODAS LAS CILINDRADAS</div>
+              </div>
+              <div class="panel-info">
+                <div class="category-pill">Categorías A.1.1 a A.1.4 • Motovehículos</div>
+                <h3>Cursos de Motos: De 110cc a más de 300cc</h3>
+                <p class="panel-desc">
+                  No importa si vas a manejar un scooter urbano o una moto de alta cilindrada. En JV te enseñamos balance dinámico, frenada de emergencia combinada, maniobra de esquive en zigzag de conos y postura segura.
+                </p>
+                <div class="panel-features-grid">
+                  <div class="feature-item">
+                    <span class="f-icon">🏍️</span>
+                    <strong>Motos Propias para Práctica:</strong> Unidades livianas y de media cilindrada listas.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">📐</span>
+                    <strong>Circuito de Conos Exacto:</strong> Replicamos las medidas oficiales de la pista de examen.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🦺</span>
+                    <strong>Equipamiento de Protección:</strong> Casco homologado, chaleco y guantes durante la clase.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">⚡</span>
+                    <strong>Alquiler para Rendir:</strong> Te llevamos la moto a la pista del examen municipal.
+                  </div>
+                </div>
+                <div class="panel-cta-row">
+                  <a href="#reservas" class="btn btn-primary btn-book-category" data-cat="moto">Reservar Clase de Moto</a>
+                  <a href="#cotizador" class="btn btn-secondary">Precios Cursos de Moto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 4: CAMIONES -->
+          <div class="fleet-panel" id="panel-camiones" role="tabpanel">
+            <div class="panel-grid">
+              <div class="panel-img-wrap">
+                <img src="images/jv_truck_bus.jpg" alt="Entrenamiento en camiones y vehículos pesados de transporte en JV" class="panel-img" loading="lazy">
+                <div class="panel-badge-overlay">PROFESIONAL • SALIDA LABORAL</div>
+              </div>
+              <div class="panel-info">
+                <div class="category-pill">Categoría C • Cargas Pesadas y Logística</div>
+                <h3>Camiones de Gran Porte: Tu Futuro Laboral</h3>
+                <p class="panel-desc">
+                  Preparate para ingresar a empresas de transporte, logística y distribución. Aprendé maniobras con remolque, retroceso guiado por espejos cóncavos, puntos ciegos, radios de giro y manejo preventivo con carga.
+                </p>
+                <div class="panel-features-grid">
+                  <div class="feature-item">
+                    <span class="f-icon">🚛</span>
+                    <strong>Unidades de Carga Real:</strong> Chasis y camiones adaptados para formación profesional.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">📐</span>
+                    <strong>Maniobras en Rampa y Dársena:</strong> Dominio absoluto de retroceso y acople.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">📄</span>
+                    <strong>Asesoramiento en Trámites C:</strong> Requisitos de antigüedad de carnet y certificado LiNTI.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">💼</span>
+                    <strong>Bolsa de Empleo y Contactos:</strong> Convenios con empresas de transporte de Zona Oeste.
+                  </div>
+                </div>
+                <div class="panel-cta-row">
+                  <a href="#reservas" class="btn btn-primary btn-book-category" data-cat="camion">Consultar Curso de Camión</a>
+                  <a href="https://wa.me/5491168172577?text=Hola,%20quisiera%20asesoramiento%20sobre%20el%20curso%20profesional%20de%20Camiones" target="_blank" rel="noopener" class="btn btn-whatsapp">Asesor Profesional</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 5: COLECTIVOS -->
+          <div class="fleet-panel" id="panel-colectivos" role="tabpanel">
+            <div class="panel-grid">
+              <div class="panel-img-wrap">
+                <img src="images/jv_truck_bus.jpg" alt="Colectivo urbano para formación de choferes profesionales en Hurlingham" class="panel-img" loading="lazy">
+                <div class="panel-badge-overlay">TRANSPORTE DE PASAJEROS</div>
+              </div>
+              <div class="panel-info">
+                <div class="category-pill">Categoría D.1 / D.2 • Chofer de Colectivo</div>
+                <h3>Colectivos: Formación Integral para Líneas de Pasajeros</h3>
+                <p class="panel-desc">
+                  El curso más buscado en Hurlingham para entrar a trabajar como chofer en líneas comunales, provinciales y nacionales. Te preparamos técnica y psicológicamente para el cuidado y confort de los pasajeros.
+                </p>
+                <div class="panel-features-grid">
+                  <div class="feature-item">
+                    <span class="f-icon">🚌</span>
+                    <strong>Vehículo de Gran Porte:</strong> Unidades habilitadas para prácticas en pista y tránsito.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🛑</span>
+                    <strong>Frenado Suave y Confort:</strong> Técnicas para evitar sacudidas a los pasajeros.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">👁️</span>
+                    <strong>Manejo de Espejos y Ángulos Muertos:</strong> Seguridad máxima en esquinas angostas.
+                  </div>
+                  <div class="feature-item">
+                    <span class="f-icon">🎯</span>
+                    <strong>Preparación para Prueba en Empresas:</strong> Superá el examen de ingreso en las líneas de colectivos.
+                  </div>
+                </div>
+                <div class="panel-cta-row">
+                  <a href="#reservas" class="btn btn-primary btn-book-category" data-cat="colectivo">Consultar Curso de Colectivo</a>
+                  <a href="https://wa.me/5491168172577?text=Hola,%20me%20interesa%20hacer%20el%20curso%20para%20sacar%20el%20registro%20de%20Colectivo" target="_blank" rel="noopener" class="btn btn-whatsapp">Hablar con Instructor</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVELES DE APRENDIZAJE A MEDIDA (Inspirado en Driver's School) -->
+    <section class="levels-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">CURSOS A TU MEDIDA</div>
+          <h2 class="section-title">Elegí el Nivel que Mejor se Adapta a Vos</h2>
+          <p class="section-subtitle">
+            Porque no todos arrancamos desde el mismo lugar, adaptamos la pedagogía y la cantidad de clases a tu experiencia previa:
+          </p>
+        </div>
+
+        <div class="levels-grid">
+          <!-- Card Inicial -->
+          <div class="level-card">
+            <div class="level-badge badge-inicial">PRINCIPIANTE DESDE CERO</div>
+            <h3 class="level-title">Nivel Inicial</h3>
+            <div class="level-classes">Pack 10 a 16 Clases</div>
+            <p class="level-text">
+              Para quienes nunca se sentaron al volante o tuvieron malas experiencias en el pasado. Te llevamos paso a paso desde el reconocimiento de mandos hasta el dominio en avenidas y estacionamiento.
+            </p>
+            <ul class="level-bullets">
+              <li>✓ Dominio completo de pedales y caja de cambios</li>
+              <li>✓ Salidas en pendiente y giros en esquinas</li>
+              <li>✓ Circulación en tránsito real y avenidas principales</li>
+              <li>✓ Maniobras de estacionamiento a 45° y 90°</li>
+              <li>✓ Curso Teórico Digital Bonificado + Cuestionarios</li>
+            </ul>
+            <a href="#reservas" class="btn btn-outline btn-block">Elegir Nivel Inicial</a>
+          </div>
+
+          <!-- Card Intermedio -->
+          <div class="level-card featured-level">
+            <div class="popular-ribbon">MÁS ELEGIDO</div>
+            <div class="level-badge badge-intermedio">AFINAR CONFIANZA</div>
+            <h3 class="level-title">Nivel Intermedio</h3>
+            <div class="level-classes">Pack 8 a 10 Clases</div>
+            <p class="level-text">
+              Para quienes ya tienen nociones básicas o licencia pero no manejan hace tiempo y quieren recuperar la seguridad, perfeccionar maniobras complejas y superar el miedo a la calle.
+            </p>
+            <ul class="level-bullets">
+              <li>✓ Práctica intensiva en horas pico de Hurlingham</li>
+              <li>✓ Entrada y salida en rotondas complejas (Av. Vergara)</li>
+              <li>✓ Estacionamiento rápido en lugares reducidos</li>
+              <li>✓ Acompañamiento pedagógico anti-estrés</li>
+              <li>✓ Alquiler de vehículo para rendir en pista</li>
+            </ul>
+            <a href="#reservas" class="btn btn-primary btn-block">Elegir Nivel Intermedio</a>
+          </div>
+
+          <!-- Card Avanzado / Fobia -->
+          <div class="level-card">
+            <div class="level-badge badge-avanzado">PERFECCIONAMIENTO</div>
+            <h3 class="level-title">Avanzado & Amaxofobia</h3>
+            <div class="level-classes">Pack 4 a 6 Clases / A Medida</div>
+            <p class="level-text">
+              Especialmente diseñado para conductores con carnet que sufren ataques de ansiedad, fobia a manejar solos, o necesitan dominar autopistas (Acceso Oeste, Buen Ayre) y lluvia.
+            </p>
+            <ul class="level-bullets">
+              <li>✓ Terapia de exposición gradual al tránsito real</li>
+              <li>✓ Conducción en autopistas a velocidad reglamentaria</li>
+              <li>✓ Práctica nocturna y con lluvia</li>
+              <li>✓ Adaptación a tu propio vehículo (opcional)</li>
+              <li>✓ Instructores especializados en manejo defensivo</li>
+            </ul>
+            <a href="#reservas" class="btn btn-outline btn-block">Elegir Perfeccionamiento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COTIZADOR Y SIMULADOR DE COMPRA ONLINE (FUNCIONALIDAD FUTURA COMPRA ONLINE) -->
+    <section class="calc-section" id="cotizador">
+      <div class="container">
+        <div class="calc-card">
+          <div class="calc-header">
+            <div class="section-kicker">COTIZADOR INTERACTIVO & COMPRA ONLINE</div>
+            <h2>Armá tu Curso y Conocé el Precio al Instante</h2>
+            <p>Calculá el valor exacto de tu paquete con descuentos por pago en efectivo/transferencia y simulación de hasta 6 cuotas con Mercado Pago.</p>
+          </div>
+
+          <div class="calc-body-grid">
+            <!-- Controles de Configuración -->
+            <div class="calc-controls">
+              
+              <div class="control-group">
+                <label class="control-label">1. Elegí el tipo de vehículo:</label>
+                <div class="control-chips" id="calcVehiculoChips">
+                  <button type="button" class="chip active" data-val="manual">🚗 Gol Rojo (Manual)</button>
+                  <button type="button" class="chip" data-val="automatico">⚡ Auto Automático</button>
+                  <button type="button" class="chip" data-val="moto">🏍️ Moto</button>
+                  <button type="button" class="chip" data-val="camion">🚛 Camión (Cat. C)</button>
+                  <button type="button" class="chip" data-val="colectivo">🚌 Colectivo (Cat. D)</button>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <div class="slider-header">
+                  <label class="control-label" for="clasesRange">2. Cantidad de clases prácticas:</label>
+                  <span class="range-value-pill" id="clasesValue">10 Clases</span>
+                </div>
+                <input type="range" id="clasesRange" min="5" max="20" step="1" value="10" class="custom-slider">
+                <div class="slider-ticks">
+                  <span>5 (Express)</span>
+                  <span class="tick-recommended">10 (Recomendado)</span>
+                  <span>15</span>
+                  <span>20 (Completo)</span>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label">3. Adicionales para tu tranquilidad:</label>
+                <div class="checkbox-options">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" id="chkExamen" checked>
+                    <span class="checkmark"></span>
+                    <span class="chk-label">
+                      <strong>Alquiler de vehículo y acompañamiento a pista de examen</strong>
+                      <small>Rendís con el mismo auto que aprendiste y el apoyo de tu instructor</small>
+                    </span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" id="chkTeorico" checked disabled>
+                    <span class="checkmark"></span>
+                    <span class="chk-label">
+                      <strong>Curso Teórico Vial Digital + Banco de Preguntas (GRATIS)</strong>
+                      <small class="text-success">¡Bonificado 100% con tu curso!</small>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Resumen de Precios y Formas de Pago -->
+            <div class="calc-summary-col">
+              <div class="price-box">
+                <div class="price-box-title">Resumen de tu Plan Personalizado</div>
+                <div class="summary-item">
+                  <span id="summaryVehiculoLabel">Gol Rojo Manual (10 clases)</span>
+                  <strong id="summarySubtotal">$260.000</strong>
+                </div>
+                <div class="summary-item" id="summaryRowExamen">
+                  <span>Acompañamiento a Examen en Pista</span>
+                  <strong>$48.000</strong>
+                </div>
+                <div class="summary-item discount-row">
+                  <span>Curso Teórico + Test Vial</span>
+                  <strong class="text-free">¡GRATIS! ($35.000)</strong>
+                </div>
+                <hr class="summary-hr">
+                
+                <div class="total-block">
+                  <div class="total-label">Precio de Lista:</div>
+                  <div class="total-amount" id="totalLista">$308.000</div>
+                </div>
+
+                <div class="promo-highlight-box">
+                  <div class="promo-cash-title">💵 Pago Efectivo o Transferencia (15% OFF):</div>
+                  <div class="promo-cash-price" id="totalEfectivo">$261.800</div>
+                  <small>¡Ahorrás <span id="ahorroText">$46.200</span> al instante!</small>
+                </div>
+
+                <div class="installments-box">
+                  <div class="inst-item">
+                    <span>💳 En <strong>3 Cuotas Fijas</strong> de:</span>
+                    <strong id="cuota3Text">$102.666 /mes</strong>
+                  </div>
+                  <div class="inst-item">
+                    <span>💳 En <strong>6 Cuotas Fijas</strong> de:</span>
+                    <strong id="cuota6Text">$55.440 /mes</strong>
+                  </div>
+                </div>
+
+                <div class="calc-buttons">
+                  <button type="button" class="btn btn-primary btn-block" id="btnComprarOnline">
+                    🛒 Comprar Online (Mercado Pago)
+                  </button>
+                  <button type="button" class="btn btn-whatsapp btn-block" id="btnCotizarWhatsapp">
+                    💬 Enviar Presupuesto a WhatsApp
+                  </button>
+                </div>
+                
+                <div class="safe-checkout-badge">
+                  🔒 Pago seguro respaldado por Mercado Pago • Factura A y B disponible
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SISTEMA DE RESERVA DE TURNOS ONLINE (SINCRONIZADO CON GOOGLE CALENDAR) -->
+    <section class="booking-section" id="reservas">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">AUTOGESTIÓN ONLINE</div>
+          <h2 class="section-title">Reservá tu Turno en 4 Simples Pasos</h2>
+          <p class="section-subtitle">
+            Seleccioná tu vehículo, fecha y horario. Recibirás tu <strong>confirmación inmediata con sincronización a Google Calendar</strong> y notificación a WhatsApp.
+          </p>
+        </div>
+
+        <div class="booking-wizard-card">
+          <!-- Wizard Steps Indicator -->
+          <div class="wizard-steps" role="navigation" aria-label="Pasos de la reserva">
+            <div class="wizard-step active" id="stepIndicator1">
+              <span class="step-num">1</span>
+              <span class="step-label">Vehículo & Nivel</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="wizard-step" id="stepIndicator2">
+              <span class="step-num">2</span>
+              <span class="step-label">Día & Horario</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="wizard-step" id="stepIndicator3">
+              <span class="step-num">3</span>
+              <span class="step-label">Tus Datos</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="wizard-step" id="stepIndicator4">
+              <span class="step-num">4</span>
+              <span class="step-label">Confirmación & Calendar</span>
+            </div>
+          </div>
+
+          <!-- Wizard Forms -->
+          <form id="bookingForm" class="wizard-form">
+            
+            <!-- PASO 1 -->
+            <div class="wizard-pane active" id="paneStep1">
+              <h3>Paso 1: ¿Qué querés aprender a manejar?</h3>
+              <p class="pane-help">Elegí la categoría de vehículo y tu nivel de experiencia actual:</p>
+              
+              <div class="form-grid-cards">
+                <label class="vehicle-select-card">
+                  <input type="radio" name="reservaVehiculo" value="manual" checked>
+                  <div class="v-card-content">
+                    <span class="v-card-icon">🚗</span>
+                    <h4>Auto Manual (Gol Rojo)</h4>
+                    <p>El auto insignia con pedalera doble comando.</p>
+                  </div>
+                </label>
+
+                <label class="vehicle-select-card">
+                  <input type="radio" name="reservaVehiculo" value="automatico">
+                  <div class="v-card-content">
+                    <span class="v-card-icon">⚡</span>
+                    <h4>Auto Automático</h4>
+                    <p>Manejo sereno y sin cambios manuales.</p>
+                  </div>
+                </label>
+
+                <label class="vehicle-select-card">
+                  <input type="radio" name="reservaVehiculo" value="moto">
+                  <div class="v-card-content">
+                    <span class="v-card-icon">🏍️</span>
+                    <h4>Moto (Todas cilindradas)</h4>
+                    <p>Circuito cerrado y destreza en pista.</p>
+                  </div>
+                </label>
+
+                <label class="vehicle-select-card">
+                  <input type="radio" name="reservaVehiculo" value="camion">
+                  <div class="v-card-content">
+                    <span class="v-card-icon">🚛</span>
+                    <h4>Camión (Cat. C)</h4>
+                    <p>Transporte de cargas y gran porte.</p>
+                  </div>
+                </label>
+
+                <label class="vehicle-select-card">
+                  <input type="radio" name="reservaVehiculo" value="colectivo">
+                  <div class="v-card-content">
+                    <span class="v-card-icon">🚌</span>
+                    <h4>Colectivo (Cat. D)</h4>
+                    <p>Transporte público de pasajeros.</p>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-row-field">
+                <label class="field-title" for="reservaNivel">Tu nivel de conocimiento previo:</label>
+                <select id="reservaNivel" class="custom-select" required>
+                  <option value="Principiante (cero experiencia)">Principiante (Nunca me senté al volante)</option>
+                  <option value="Intermedio (conozco los pedales)">Intermedio (Sé moverlo pero me falta confianza)</option>
+                  <option value="Avanzado / Con carnet">Avanzado (Tengo carnet pero necesito práctica en tránsito)</option>
+                  <option value="Fobia al volante">Amaxofobia / Miedo al volante (Busco paciencia especial)</option>
+                </select>
+              </div>
+
+              <div class="pane-actions">
+                <div></div>
+                <button type="button" class="btn btn-primary" id="btnNext1">Continuar a Fecha &rarr;</button>
+              </div>
+            </div>
+
+            <!-- PASO 2 -->
+            <div class="wizard-pane" id="paneStep2">
+              <h3>Paso 2: Elegí Día y Horario para tu Clase</h3>
+              <p class="pane-help">Disponibilidad en tiempo real en nuestra central de Av. Gobernador Vergara 3855:</p>
+              
+              <div class="date-picker-grid">
+                <div class="date-input-group">
+                  <label for="reservaFecha" class="field-title">Fecha deseada:</label>
+                  <input type="date" id="reservaFecha" class="custom-input" required>
+                  <small class="field-hint">Atendemos de Lunes a Sábados</small>
+                </div>
+
+                <div class="instructor-pref-group">
+                  <label for="reservaInstructor" class="field-title">Preferencia de Instructor:</label>
+                  <select id="reservaInstructor" class="custom-select">
+                    <option value="Indistinto (Asignar más rápido)">Indistinto (El más pronto disponible)</option>
+                    <option value="Martín Gamarra (Titular)">Martín Gamarra (Titular JV Autoescuela)</option>
+                    <option value="Instructora Mujer">Instructora Mujer (Paciencia y pedagogía)</option>
+                    <option value="Instructor Profesional Cargas/Pasajeros">Instructor de Camión / Colectivo</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="slots-container">
+                <label class="field-title">Horarios disponibles para esta fecha:</label>
+                <div class="slots-grid" id="slotsGrid">
+                  <label class="slot-pill"><input type="radio" name="reservaHora" value="08:30" checked><span>08:30 hs</span></label>
+                  <label class="slot-pill"><input type="radio" name="reservaHora" value="10:00"><span>10:00 hs</span></label>
+                  <label class="slot-pill"><input type="radio" name="reservaHora" value="11:30"><span>11:30 hs</span></label>
+                  <label class="slot-pill"><input type="radio" name="reservaHora" value="14:00"><span>14:00 hs</span></label>
+                  <label class="slot-pill"><input type="radio" name="reservaHora" value="15:30"><span>15:30 hs</span></label>
+                  <label class="slot-pill"><input type="radio" name="reservaHora" value="17:00"><span>17:00 hs</span></label>
+                </div>
+              </div>
+
+              <div class="pane-actions">
+                <button type="button" class="btn btn-outline" id="btnBack2">&larr; Volver</button>
+                <button type="button" class="btn btn-primary" id="btnNext2">Continuar a Datos &rarr;</button>
+              </div>
+            </div>
+
+            <!-- PASO 3 -->
+            <div class="wizard-pane" id="paneStep3">
+              <h3>Paso 3: Tus Datos para la Reserva</h3>
+              <p class="pane-help">Completá tus datos para emitir tu confirmación y seguro de práctica:</p>
+
+              <div class="inputs-grid">
+                <div class="form-field">
+                  <label for="alumnoNombre" class="field-title">Nombre y Apellido *</label>
+                  <input type="text" id="alumnoNombre" class="custom-input" placeholder="Ej: Juan Pérez" required>
+                </div>
+                <div class="form-field">
+                  <label for="alumnoTelefono" class="field-title">WhatsApp / Teléfono *</label>
+                  <input type="tel" id="alumnoTelefono" class="custom-input" placeholder="Ej: 11 1234-5678" required>
+                </div>
+                <div class="form-field">
+                  <label for="alumnoEmail" class="field-title">Correo Electrónico (Para Google Calendar) *</label>
+                  <input type="email" id="alumnoEmail" class="custom-input" placeholder="nombre@gmail.com" required>
+                </div>
+                <div class="form-field">
+                  <label for="alumnoMunicipio" class="field-title">Municipio donde tramitás el carnet</label>
+                  <select id="alumnoMunicipio" class="custom-select">
+                    <option value="Hurlingham">Hurlingham</option>
+                    <option value="Morón">Morón</option>
+                    <option value="Ituzaingó">Ituzaingó</option>
+                    <option value="San Miguel">San Miguel</option>
+                    <option value="Tres de Febrero">Tres de Febrero</option>
+                    <option value="CABA">CABA</option>
+                    <option value="Otro">Otro Municipio</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="pane-actions">
+                <button type="button" class="btn btn-outline" id="btnBack3">&larr; Volver</button>
+                <button type="submit" class="btn btn-primary btn-submit-reserve" id="btnSubmitReserve">
+                  <span>✅</span> Confirmar y Agendar Turno
+                </button>
+              </div>
+            </div>
+
+            <!-- PASO 4 (CONFIRMACIÓN & SYNC) -->
+            <div class="wizard-pane" id="paneStep4">
+              <div class="confirmation-box">
+                <div class="confirm-icon">🎉</div>
+                <h3>¡Turno Pre-Agendado con Éxito!</h3>
+                <p class="confirm-lead">Tu solicitud ha sido registrada en el sistema de <strong>JV Autoescuela Hurlingham</strong>.</p>
+
+                <div class="ticket-card" id="ticketCard">
+                  <div class="ticket-header">
+                    <span class="ticket-code" id="ticketCode">Reserva #JV-849201</span>
+                    <span class="ticket-badge">Pendiente de Confirmación</span>
+                  </div>
+                  <div class="ticket-grid">
+                    <div class="t-item">
+                      <span class="t-lbl">Alumno:</span>
+                      <strong id="ticketNombre">-</strong>
+                    </div>
+                    <div class="t-item">
+                      <span class="t-lbl">Vehículo:</span>
+                      <strong id="ticketVehiculo">Gol Rojo Manual</strong>
+                    </div>
+                    <div class="t-item">
+                      <span class="t-lbl">Fecha & Hora:</span>
+                      <strong id="ticketFechaHora">-</strong>
+                    </div>
+                    <div class="t-item">
+                      <span class="t-lbl">Sede:</span>
+                      <strong>Av. Gob. Vergara 3855, Hurlingham</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Botones de Acción de Sincronización -->
+                <div class="sync-actions-card">
+                  <h4>Sincronizá tu clase con tu calendario:</h4>
+                  <div class="sync-buttons">
+                    <a href="#" id="btnGCalSync" target="_blank" rel="noopener" class="btn btn-gcal">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/></svg>
+                      Añadir a Google Calendar
+                    </a>
+                    <button type="button" id="btnDownloadIcs" class="btn btn-outline">
+                      📥 Descargar Recordatorio (.ics)
+                    </button>
+                  </div>
+                  <div class="wa-confirm-row">
+                    <p>Para asegurar tu vacante de inmediato, envianos el comprobante por WhatsApp:</p>
+                    <a href="#" id="btnWaConfirmBooking" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+                      <span>💬</span> Notificar a JV por WhatsApp Ahora
+                    </a>
+                  </div>
+                </div>
+
+                <div class="pane-actions" style="justify-content: center; margin-top: 20px;">
+                  <button type="button" class="btn btn-secondary" id="btnNewBooking">Hacer otra reserva</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEST INTERACTIVO DE TRÁNSITO HURLINGHAM (ENGAGEMENT & EDUCACIÓN) -->
+    <section class="test-section" id="test-examen">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">EDUCACIÓN VIAL HURLINGHAM</div>
+          <h2 class="section-title">¿Aprobarías el Teórico de Tránsito Hoy?</h2>
+          <p class="section-subtitle">
+            Poné a prueba tus conocimientos con estas 5 preguntas oficiales de la pista y circuito de Hurlingham:
+          </p>
+        </div>
+
+        <div class="quiz-container">
+          <div class="quiz-progress-bar">
+            <div class="progress-fill" id="quizProgress" style="width: 20%;"></div>
+          </div>
+          <div class="quiz-card" id="quizCard">
+            <div class="quiz-meta">
+              <span class="quiz-q-num" id="quizQNum">Pregunta 1 de 5</span>
+              <span class="quiz-score-badge" id="quizScoreBadge">Puntaje: 0</span>
+            </div>
+            
+            <h3 class="quiz-question" id="quizQuestion">
+              En la rotonda de Av. Gobernador Vergara, ¿quién tiene prioridad de paso reglamentaria?
+            </h3>
+
+            <div class="quiz-options" id="quizOptions">
+              <!-- Rendered dynamically by app.js -->
+            </div>
+
+            <div class="quiz-feedback" id="quizFeedback" style="display: none;">
+              <div class="feedback-title" id="feedbackTitle"></div>
+              <div class="feedback-text" id="feedbackText"></div>
+              <button type="button" class="btn btn-primary btn-sm" id="btnNextQuestion">Siguiente Pregunta &rarr;</button>
+            </div>
+          </div>
+
+          <div class="quiz-result-card" id="quizResultCard" style="display: none;">
+            <div class="result-icon" id="resultIcon">🏆</div>
+            <h3 id="resultTitle">¡Excelente resultado!</h3>
+            <p id="resultText">Tenés muy buena base teórica para salir a la calle.</p>
+            <div class="result-score-circle" id="resultScore">5 / 5</div>
+            <p>El próximo paso es dominar el embrague y el tránsito real con nuestros instructores.</p>
+            <a href="#reservas" class="btn btn-primary">Reservar Clases Prácticas en JV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS REALES Y RESEÑAS DE GOOGLE -->
+    <section class="reviews-section" id="opiniones">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">CONFIANZA TOTAL</div>
+          <h2 class="section-title">Lo que Dicen Nuestros Vecinos en Google</h2>
+          <div class="google-rating-lead">
+            <span class="g-logo">Google</span>
+            <span class="stars">★★★★★</span>
+            <strong>4.8 / 5</strong> basado en <strong>255+ opiniones verificadas</strong> de Hurlingham
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-quote">
+              "Tenía un terror absoluto a manejar, me transpiraban las manos de sólo subirme al auto. En JV con el Gol Rojo y la paciencia infinita de Martín pude sacar mi registro al primer intento. No tienen comparación con lo del municipio, acá aprendés de verdad."
+            </p>
+            <div class="rev-author">
+              <div class="avatar">MG</div>
+              <div>
+                <strong>Mariela González</strong>
+                <small>Hurlingham Centro • Curso Nivel Inicial</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-quote">
+              "Hice el curso para Colectivo (Cat. D) porque me llamaron para una línea de la zona oeste. La preparación que te dan en puntos ciegos, radio de giro y frenada suave es impecable. Rendí la prueba en la empresa y quedé contratado en una semana."
+            </p>
+            <div class="rev-author">
+              <div class="avatar">CR</div>
+              <div>
+                <strong>Carlos Rodríguez</strong>
+                <small>Villa Tesei • Curso Profesional Colectivo</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-quote">
+              "Probé primero anotarme a las clases gratis del municipio y fue una pérdida de tiempo total, me tuvieron 8 meses esperando. Vine a JV Autoescuela, empecé al día siguiente en el auto automático y en 10 clases ya estaba manejando por Acceso Oeste tranquila."
+            </p>
+            <div class="rev-author">
+              <div class="avatar">SL</div>
+              <div>
+                <strong>Sofía Leguizamón</strong>
+                <small>William Morris • Auto Automático</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-kicker">RESOLVÉ TUS DUDAS</div>
+          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <p class="section-subtitle">Todo lo que necesitás saber antes de empezar a aprender con nosotros:</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿A partir de qué edad puedo hacer el curso de manejo?</span>
+              <span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Podés comenzar a partir de los <strong>17 años</strong> con la debida autorización de tus padres, tutores o representantes legales ante escribano o juzgado. A los 18 años podés realizar el curso de forma particular sin requerir autorización.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Las clases son directamente en la calle o en un predio cerrado?</span>
+              <span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Nuestras clases se realizan <strong>100% en tránsito real y con doble comando habilitado</strong>. Salimos a circular por calles, avenidas y rotondas de Hurlingham desde la primera clase de forma progresiva y segura. También practicamos en pistas de conos idénticas al circuito del examen municipal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Puedo alquilar el Gol Rojo para rendir el examen práctico?</span>
+              <span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>¡Sí, por supuesto! Contamos con el servicio de <strong>Acompañamiento a Examen</strong>. Te llevamos el mismo auto en el que tomaste tus clases para que rindas con la confianza de un vehículo que ya conocés a la perfección, aumentando tus chances de aprobar en el primer intento.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué medios de pago aceptan? ¿Hay cuotas?</span>
+              <span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Aceptamos <strong>Efectivo y Transferencia Bancaria (con 15% de descuento)</strong>, tarjetas de débito y tarjetas de crédito bancarias en <strong>3 y 6 cuotas fijas</strong> a través de Mercado Pago.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué pasa si llueve el día que tengo programada mi clase?</span>
+              <span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Las clases <strong>no se suspenden por lluvia moderada</strong>, ya que es una oportunidad pedagógica invaluable para aprender a manejar con calzada mojada, usar los limpiaparabrisas, desempañador y regular la distancia de frenado con total seguridad junto al instructor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN, CONTACTO Y FORMULARIO -->
+    <section class="contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info-col">
+          <div class="section-kicker">SEDE CENTRAL</div>
+          <h2>Vení a Conocernos en Hurlingham</h2>
+          <p class="contact-desc">
+            Estamos ubicados en una zona estratégica de fácil acceso sobre la Avenida Gobernador Vergara, cerca de las principales líneas de colectivo y estaciones de tren.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="c-detail">
+              <div class="c-icon">📍</div>
+              <div>
+                <strong>Dirección:</strong>
+                <p>Avenida Gobernador Vergara 3855, Hurlingham (B1686 William C. Morris, Prov. de Buenos Aires)</p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="c-icon">📞</div>
+              <div>
+                <strong>Teléfono / WhatsApp Directo:</strong>
+                <p><a href="tel:1168172577">11 6817-2577</a> | Atención personalizada</p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="c-icon">⏰</div>
+              <div>
+                <strong>Horarios de Atención:</strong>
+                <p>Lunes a Viernes: 08:00 a 18:00 hs<br>Sábados: 09:00 a 13:00 hs</p>
+              </div>
+            </div>
+            <div class="c-detail">
+              <div class="c-icon">🚗</div>
+              <div>
+                <strong>Flota en Sede:</strong>
+                <p>Gol Rojo Manual, Automático, Motos, Camiones y Colectivos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta-buttons">
+            <a href="https://wa.me/5491168172577?text=Hola%20JV%20Autoescuela,%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+              <span>💬</span> Escribinos a WhatsApp
+            </a>
+            <a href="https://maps.google.com/?q=Avenida+Gobernador+Vergara+3855+Hurlingham" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+              <span>🗺️</span> Cómo Llegar en Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulario Rápido y Mensaje -->
+        <div class="contact-form-col">
+          <div class="quick-form-card">
+            <h3>¿Tenés alguna duda o consulta especial?</h3>
+            <p>Dejanos tu mensaje y te contactamos en el transcurso del día:</p>
+            
+            <form id="contactForm">
+              <div class="form-field">
+                <label for="cNombre">Tu Nombre Completo</label>
+                <input type="text" id="cNombre" class="custom-input" placeholder="Ej: María Rossi" required>
+              </div>
+              <div class="form-field">
+                <label for="cTel">Teléfono / Celular</label>
+                <input type="tel" id="cTel" class="custom-input" placeholder="Ej: 11 9876-5432" required>
+              </div>
+              <div class="form-field">
+                <label for="cInteres">Categoría de Interés</label>
+                <select id="cInteres" class="custom-select">
+                  <option value="Auto Manual Gol Rojo">Auto Manual (Gol Rojo)</option>
+                  <option value="Auto Automático">Auto Automático</option>
+                  <option value="Motos">Motos (Todas las cilindradas)</option>
+                  <option value="Camión">Camión (Categoría C)</option>
+                  <option value="Colectivo">Colectivo (Categoría D)</option>
+                  <option value="Amaxofobia / Miedo al volante">Amaxofobia / Miedo al volante</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="cMensaje">Mensaje o Consulta</label>
+                <textarea id="cMensaje" rows="3" class="custom-textarea" placeholder="¿En qué horario te gustaría tomar clases?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Enviar Consulta</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-mark">JV</div>
+          <div class="logo-text">
+            <span class="brand-name">AUTOESCUELA</span>
+            <span class="brand-sub">HURLINGHAM</span>
+          </div>
+        </div>
+        <p class="footer-bio">
+          La autoescuela N°1 en Hurlingham y Zona Oeste. Enseñando a manejar con seguridad, pedagogía y vehículos de vanguardia hace más de una década.
+        </p>
+        <div class="footer-socials">
+          <a href="https://wa.me/5491168172577" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+          <a href="https://www.youtube.com/@jvautoescuela3516" target="_blank" rel="noopener" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categorías</h4>
+        <ul class="footer-links">
+          <li><a href="#cursos">Auto Manual (Gol Rojo)</a></li>
+          <li><a href="#cursos">Auto Caja Automática</a></li>
+          <li><a href="#cursos">Motos (110cc a 300cc+)</a></li>
+          <li><a href="#cursos">Camiones (Cat. Carga)</a></li>
+          <li><a href="#cursos">Colectivos (Cat. Pasajeros)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios & Cursos</h4>
+        <ul class="footer-links">
+          <li><a href="#reservas">Reserva de Turno Online</a></li>
+          <li><a href="#cotizador">Simulador de Precios y Cuotas</a></li>
+          <li><a href="#por-que-jv">Comparativa vs Municipio</a></li>
+          <li><a href="#test-examen">Simulador Teórico de Tránsito</a></li>
+          <li><a href="#contacto">Acompañamiento a Pista</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col legal-col">
+        <h4>Contacto & Habilitación</h4>
+        <p>📍 Av. Gobernador Vergara 3855, Hurlingham</p>
+        <p>📞 Tel: 11 6817-2577</p>
+        <p class="legal-text">
+          Autoescuela matriculada y habilitada conforme a las disposiciones de la Agencia Nacional de Seguridad Vial (ANSV) y la Dirección de Tránsito de la Prov. de Buenos Aires.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <div>&copy; <span id="currentYear">2026</span> JV Autoescuela Hurlingham. Todos los derechos reservados.</div>
+        <div class="cf-badge">
+          🚀 Optimizado para <strong>Cloudflare Workers</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/5491168172577?text=¡Hola%20JV%20Autoescuela!%20Quiero%20información%20sobre%20las%20clases%20de%20manejo" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <span class="wa-tooltip">¿Dudas? Hablá con nosotros</span>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 16.65c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.13 8.13 0 0 1-1.25-4.28c0-4.5 3.66-8.16 8.17-8.16 2.18 0 4.23.85 5.77 2.39a8.11 8.11 0 0 1 2.4 5.77c-.01 4.51-3.67 8.16-8.17 8.16zm4.48-6.12c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.98-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.28 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.18-.47-.3z"/>
+    </svg>
+  </a>
+
+  <!-- MODAL DE CHECKOUT SIMULADO (COMPRA ONLINE) -->
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>🛒 Checkout Seguro - JV Autoescuela</h3>
+        <button class="modal-close" id="checkoutClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="order-summary-box">
+          <div class="order-row">
+            <span id="orderItemTitle">Pack 10 Clases - Gol Rojo Manual</span>
+            <strong id="orderItemPrice">$260.000</strong>
+          </div>
+          <div class="order-row" id="orderExamenRow">
+            <span>Acompañamiento a Examen en Pista</span>
+            <strong>$48.000</strong>
+          </div>
+          <div class="order-row total-order">
+            <span>Total a Pagar:</span>
+            <strong id="orderTotal">$308.000</strong>
+          </div>
+        </div>
+
+        <div class="payment-method-selector">
+          <label class="pay-method-card active">
+            <input type="radio" name="payMethod" value="mercadopago" checked>
+            <div>
+              <strong>Mercado Pago (Tarjetas de Crédito / Débito)</strong>
+              <small>Hasta 6 cuotas fijas de <span id="mpCuotaAmount">$55.440</span></small>
+            </div>
+          </label>
+          <label class="pay-method-card">
+            <input type="radio" name="payMethod" value="transferencia">
+            <div>
+              <strong>Transferencia Bancaria o Efectivo (15% OFF)</strong>
+              <small class="text-success">Precio especial: <span id="transfAmount">$261.800</span></small>
+            </div>
+          </label>
+        </div>
+
+        <form id="checkoutForm" class="checkout-form">
+          <div class="form-field">
+            <label for="coNombre">Nombre Completo del Alumno</label>
+            <input type="text" id="coNombre" class="custom-input" placeholder="Nombre y Apellido" required>
+          </div>
+          <div class="form-field">
+            <label for="coEmail">Email para Envío del Comprobante</label>
+            <input type="email" id="coEmail" class="custom-input" placeholder="correo@ejemplo.com" required>
+          </div>
+          <div class="form-field">
+            <label for="coDni">DNI del Alumno</label>
+            <input type="text" id="coDni" class="custom-input" placeholder="DNI sin puntos" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnProcesarPago">
+            Pagar con Mercado Pago &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

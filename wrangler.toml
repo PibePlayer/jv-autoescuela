@@ -1,0 +1,17 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "jv-autoescuela"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Servir assets estáticos desde el directorio public en Cloudflare Workers
+[assets]
+directory = "./public"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "single-page-application"
+
+[vars]
+ENVIRONMENT = "production"
+SCHOOL_NAME = "JV Autoescuela Hurlingham"
+WHATSAPP_NUMBER = "5491168172577"
+ADDRESS = "Av. Gobernador Vergara 3855, Hurlingham, Buenos Aires"

@@ -1,0 +1,23 @@
+{
+  "name": "jv-autoescuela-hurlingham",
+  "version": "1.0.0",
+  "description": "Aplicación Web oficial de JV Autoescuela Hurlingham - Lista para Cloudflare Workers",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "cf:dev": "wrangler dev",
+    "cf:deploy": "wrangler deploy"
+  },
+  "keywords": [
+    "autoescuela",
+    "hurlingham",
+    "escuela-de-manejo",
+    "cloudflare-workers"
+  ],
+  "author": "JV Autoescuela Hurlingham",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.100.0"
+  }
+}
